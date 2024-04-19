@@ -1,4 +1,69 @@
-body {
-    background-color: aquamarine;
+.menu {
+    font-family: Cambria;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
+body {
+    background-image: white;
+    font-family: Cambria;
+}
+
+.image {
+    padding: 5px;
+    float: left;
+}
+
+.image:hover {
+    border: 3px brown solid;
+    margin-right: 5px;
+}
+
+.color {
+    color: brown;
+}
+
+.big {
+    font-size: 37px;
+}
+
+.line {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+button {
+    height: 37px;
+    width: fit-content;
+    background-color: brown;
+    border: none;
+    font-size: 20px;
+    font-family: Cambria;
+    color: white;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.portfolio {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid brown;
+}
+
+.box {
+    display: flex;
+    padding-right: 10px;
+    justify-content:left
+}
+
+.item {
+    padding-right: 20px;
+}
