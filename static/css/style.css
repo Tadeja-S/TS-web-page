@@ -1,23 +1,50 @@
+.header {
+    background-color: rgb(204, 171, 171);
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
 .menu {
-    font-family: Cambria;
+    font-family: Montserrat Alternates;
+    color: brown;
     font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 body {
-    background-image: white;
-    font-family: Cambria;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: rgb(241, 208, 208);
+    font-family: Montserrat Alternates;
+}
+
+.box {
+    margin: 20px;
+    display: flex;
+    padding-right: 10px;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.item {
+    height: fit-content;
+    width: 500px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 .image {
-    padding: 5px;
-    float: left;
-}
-
-.image:hover {
-    border: 3px brown solid;
-    margin-right: 5px;
+    margin-top: 20px;
+    border: 2px solid rgb(204, 171, 171);
 }
 
 .color {
@@ -39,31 +66,31 @@ ul {
 button {
     height: 37px;
     width: fit-content;
-    background-color: brown;
+    background-color: rgb(204, 171, 171);
     border: none;
     font-size: 20px;
-    font-family: Cambria;
-    color: white;
+    font-family: Montserrat Alternates;
+    color: brown;
     text-align: center;
     transition-duration: 0.4s;
     cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .portfolio {
     width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 2px solid brown;
+    border: 2px solid rgb(204, 171, 171);
 }
 
-.box {
-    display: flex;
-    padding-right: 10px;
-    justify-content:left
-}
-
-.item {
-    padding-right: 20px;
+.enter {
+    height: 37px;
+    width: 250px;
+    font-size: 20px;
+    text-align: left;
+    font-family: Montserrat Alternates;
+    border: 1px solid rgb(204, 171, 171);
+    padding-left: 10px;
 }

@@ -1,29 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+{% block content %}
 
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-
-<body>
-    <div>
-        <a class="menu" href="/">Home</a>
-        <a class="menu" href="/portfolio">Portfolio</a>
-        <a class="menu" href="/contact">Contact</a>
+    <div class="content"> 
+        <h1 class="color big">Contact</h1>
     </div>
 
-    <div>
-    <h1 class="color big">Contact</h1>
-    <p>Tadeja Samec</p>
-    <p>Namišljena ulica 7</p>
-    <p>1000 Emona</p>
-    <p>e-pošta: tadeya@yahoo.si</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2834.087625132087!2d-63.30716052477428!3d44.738229075604494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a31020093de53%3A0x424febdbe4d6a16e!2sThis%20St%2C%20Porters%20Lake%2C%20NS%2C%20Canada!5e0!3m2!1sen!2ssi!4v1713515902612!5m2!1sen!2ssi" width="500" height="450" style="border:0;"></iframe>
-    </div>
-</body>
+    <div class="content">
+        
+        <div class="item">
+            <p>Tadeja Samec</p>
+            <p>Namišljena ulica 7</p>
+            <p>1000 Emona</p>
+            <p>e-mail: tadeya@yahoo.si</p>
+            <p>Tel.: 123 456 789</p>
+        </div>
 
-</html>
+        <div class="item">
+            <form method="post" action="/contact">
+                <input class="enter" type="text" name="contact-name" placeholder="Enter your name">
+                <br>
+                <br>
+                <input class="enter"type="email" name="contact-email" placeholder="Enter your email">
+                <br>
+                <br>
+                <textarea class="enter" name="contact-message" placeholder="Enter your message"></textarea>
+                <br>
+                <br>
+                <button type="submit">Send</button>
+                <br>
+                <br>
+            </form>
+        </div>
+
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2834.087625132087!2d-63.30716052477428!3d44.738229075604494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a31020093de53%3A0x424febdbe4d6a16e!2sThis%20St%2C%20Porters%20Lake%2C%20NS%2C%20Canada!5e0!3m2!1sen!2ssi!4v1713515902612!5m2!1sen!2ssi" width="900" height="400" style="border:0;"></iframe>
+
+{% endblock content %}
